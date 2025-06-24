@@ -24,21 +24,21 @@ Problem can be solved using optimal solutions of its subproblems.
 Recursion is a process in which a function calls itself to solve a problem by breaking it down into smaller subproblems.
 
 🔁 Calls itself for smaller inputs
-❌ Recomputes same subproblems again and again
-⚠️ Not efficient for large inputs
+❌ Recomputes same subproblems again and again  
+⚠️ Not efficient for large inputs    
 
-## Complexity	  Time	Space (stack)
+    Complexity	  Time Complexity 	  Space Complexity 
 
-    Worst Case	O(2ⁿ)	O(n)
+    Worst Case	      O(2ⁿ)	               O(n)
 
 ### 2.) MEMOIZATION ( TOP - DOWN ) :- 
 Tend to store the value of subproblems in array , map or dictionary .
 
 📌 Recursion + Caching of already solved subproblems
 
-✅ Avoids recomputation using a dp[] array or Map
-🔄 Top-down recursion
-🧠 Good for recursive thinkers
+✅ Avoids recomputation using a dp[] array or Map  
+🔄 Top-down recursion  
+🧠 Good for recursive thinkers  
 
 ### ADVANTAGES :- 
 
