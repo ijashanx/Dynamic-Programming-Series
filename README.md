@@ -23,7 +23,7 @@ Problem can be solved using optimal solutions of its subproblems.
 
 Recursion is a process in which a function calls itself to solve a problem by breaking it down into smaller subproblems.
 
-🔁 Calls itself for smaller inputs
+🔁 Calls itself for smaller inputs.  
 ❌ Recomputes same subproblems again and again.    
 ⚠️ Not efficient for large inputs    
 
