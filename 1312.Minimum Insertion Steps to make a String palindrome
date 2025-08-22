@@ -1,0 +1,47 @@
+## PROBLEM STATEMENT 
+
+Given a string s. In one step you can insert any character at any index of the string.
+
+Return the minimum number of steps to make s palindrome.
+
+A Palindrome String is one that reads the same backward as well as forward.
+
+==================================================================================================================================================================================
+
+## CODE ( IN JAVA )
+
+class Solution {
+    public int minInsertions(String s) {
+
+        // total number of insertions = length of string - length of palindromic string 
+        String rev=new StringBuilder(s).reverse().toString();
+
+        int n=s.length();
+        int[] dp=new int[n+1];
+
+        for(int i=1;i<=n;i++){
+            int prev=0;
+            for(int j=1;j<=n;j++){
+                int temp=dp[j];
+                if(s.charAt(i-1)==rev.charAt(j-1)){
+                   dp[j]=prev+1;
+                }
+                else{
+                    dp[j]=Math.max(dp[j],dp[j-1]);
+                }
+                prev=temp;
+            }
+        }
+        int lps=dp[n];
+        return n-lps;     
+    }
+}
+
+==================================================================================================================================================================================
+
+## CODE COMPLEXITY :- 
+
+1.) TIME COMPLEXITY :- O(n*m)
+2.) SPACE COMPLEXITY :-O(n)
+
+==================================================================================================================================================================================
